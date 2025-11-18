@@ -1,0 +1,30 @@
+﻿<Window x:Class="TriviaClientGUI.StatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriviaClientGUI"
+        mc:Ignorable="d"
+        Title="StatisticsWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/Stats.png" Stretch="Fill"/>
+        </Grid.Background>
+
+        <!-- buttons -->
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,174,0,0" Width="259" Height="250">
+            <Button Content="Personal Stats" Margin="0,10" Height="65" Background="#FFEBD6" Foreground="Black" Click="PersonalStats_Click"/>
+            <Button Content="High Scores" Height="67" Background="#FFEBD6" Foreground="Black" Click="HighScores_Click"/>
+        </StackPanel>
+
+        <!-- back button -->
+        <Button Content="Back"
+                Width="100" Height="40"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="20"
+                Background="#FFEBD6"
+                Foreground="Black"
+                Click="Back_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="TriviaClientGUI.MainMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main Menu" Height="500" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+       
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/menu_background.png" Stretch="Fill"/>
+        </Grid.Background>
+
+        
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,181,0,0" Width="259" Height="207" RenderTransformOrigin="0.535,0.678">
+            <Button Content="Create Room" Margin="0,10" Click="CreateRoom_Click"/>
+            <Button Content="Join Room" Margin="0,10" Click="JoinRoom_Click"/>
+            <Button Content="Show Statics" Margin="0,10" Click="Statistics_Click"/>
+            <Button Content="Exit" Margin="0,10" Click="Exit_Click"/>
+            <Button Content="Back to welcome menu" Margin="0,10" Click="back_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
